@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-white: #fff;
+    --primary-text: #061730;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    --dark-color: #03262c;
+    --anchor-color: #007aff;
+
+}
+
+body,
+html {
+    color: var(--primary-text);
+    font-size: 10px;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+
+}
+
+h1 {
+    font-size: 10rem;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+h2 {
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--primary-text);
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: white;
+}
+
+h4 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+h5 {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--primary-text);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-top: 1rem;
+}
+
+embed {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+object {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+    text-decoration: none;
+    outline: 0;
+}
+
+li a {
+    color: white;
+}
+
+a:hover,
+button:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+.main-btn {
+    position: relative;
+    color: white;
+    background-color: #60cd12;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 18px;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.main-btn:hover {
+    background: white;
+    color: var(--secondary-color);
+    border: 0.2rem solid var(--secondary-color);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary-text);
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.6rem;
+
+}
+.product .banner_section{
+    background: url(../img/pro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+}
+.gallery .banner_section{
+    background: url(../img/gallery.jpg);
+
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+}
+.about .banner_section{
+background: url(../img/about.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 18rem;
+padding-bottom: 10rem;
+}
+.contact .banner_section {
+    background: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    z-index: 2;
+}
+
+.header .navbar {
+    background: rgba(3, 3, 32, 0.916);
+    color: white;
+    border-radius: 16px;
+}
+
+.header .navbar-brand {
+    width: 50px;
+    color: white;
+    margin-top: 5px;
+}
+
+.header .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.9rem;
+
+}
+
+.header .nav-link:hover,
+.header .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.header .navbar-toggler {
+    color: white;
+    font-size: 1.5rem;
+    height: 1.7rem;
+    padding: 0;
+}
+
+.header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.header .header_right span {
+    color: #60cd12;
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.header .header_right .phone_no {
+    color: white;
+    font-size: 1.65rem;
+}
+
+.header-scrollerd {
+    position: fixed;
+    top: 0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+}
+
+.banner_section {
+    background-image: url(../img/abcd.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.banner_section .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.carousel-caption {
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+.carousel-caption h1 {
+    font-size: 54px;
+
+}
+
+.carousel-caption h3 {
+    color: #5cb917;
+
+}
+
+.feature_section .features-box {
+    background-color: transparent;
+    /* border: 2px solid red; */
+    padding: 8rem 0;
+    transition: 0.5s linear;
+}
+
+.feature_section .features-box:hover {
+    background-color: #061730;
+    cursor: pointer;
+
+}
+
+.feature_section .features-box:hover h3 {
+    color: #fff;
+}
+
+.feature_section .features-box:hover .features-icons-border {
+    border: 2px solid green;
+}
+
+.feature_section .features-icons-border {
+    background-color: rgb(245, 248, 245);
+    border: 2px solid;
+    padding: 1.3rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid lavender;
+}
+
+.features-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.features-text h3 {
+    color: #061730;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.landing_about_section {
+    background: url(../img/girl3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(248, 239, 239);
+}
+
+.landing_about_section .left {
+    text-align: left;
+    margin-left: 440px;
+}
+
+.about-content h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+.about-details p {
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+.about-details .button {
+    margin-left: 25px;
+}
+
+.landing_product_section .product-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 5px solid lightcyan;
+    padding: 2rem 1rem;
+    transition: all 0.3;
+}
+
+.landing_product_section .product-card .product-img {
+    margin-bottom: 3rem;
+
+}
+
+.landing_product_section .product-card .product-img img {
+    width: 300px;
+    height: 300px;
+    background: none
+}
+
+.landing_product_section .product-card h3 {
+    color: #061730;
+}
+
+.landing_product_section .product-card span {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #60cd12;
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card .product-detail {
+    position: absolute;
+    bottom: -22rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #061730;
+    transition: all 0.5s ease;
+}
+
+.landing_product_section .product-card:hover .product-detail {
+    bottom: 0;
+}
+
+.testimonial_section {
+    background-color: #d5f3cf;
+    padding-bottom: 8rem;
+}
+
+.testimonial_section .carousel-indicators {
+    bottom: -6rem;
+}
+
+.testimonial_section .carousel-indicators button {
+    background-color: #061730;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.testimonial_section .card {
+    background: rgb(19, 170, 19);
+    text-align: right;
+    padding: 5rem 5rem 5rem 0;
+    border-radius: 0 .5rem .5rem 0;
+    border: 1px solid gray;
+}
+
+.profile-box {
+    padding: 1.8rem;
+    background-color: rgb(4, 4, 48);
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.profile-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: .625rem 3.125rem;
+    object-fit: cover;
+}
+
+.gallery_section {
+    transition: 0.3s ease-in;
+}
+
+.gallery_section:hover {
+    background-color: #c9f5a9;
+}
+
+.gallery_section img {
+    width: 400px;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery_section img:hover {
+    width: 400px;
+    height: 400px;
+
+}
+
+.footer_wrapper {
+    background: var(--primary-text);
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.footer_wrapper h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.footer_wrapper .company_details {
+    font-size: 17px;
+}
+
+.footer_wrapper .contain-info li a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.link-widget li a,
+p {
+    padding-left: 1.6rem;
+    position: relative;
+    transition: all 0.3 ease-in;
+    font-size: 15px;
+}
+
+.link-widget li a:before {
+    contain: '\f105';
+    position: absolute;
+    left: 03rem;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.social-network a {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    margin: 1rem;
+    display: inline-block;
+    border: 0.124rem solid gray;
+    color: gray;
+    text-align: center;
+    border-radius: 100%;
+    transition: 0.3s ease-in;
+}
+
+.social-network a:hover {
+    color: white;
+    background-color: #60cd12;
+}
+
+.form-group input {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.form-group button {
+    font-size: 13px;
+    border: 1px solid white;
+}
+
+.copyright-section {
+    text-align: center;
+    margin-bottom: -60px;
+    background-color: #60cd12;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.copyright-section p {
+    font-size: 17px;
+    color: black;
+}
+
+.copyright-section p a {
+    color: black;
+}
+
+/* about  */
+.about_section .section-subtitle{
+    color: #061730;
+    font-weight: 500;
+}
+.banner-content h2 {
+    color: #fff;
+}
+
+.about .navbar {
+    background: rgb(250, 75, 48);
+}
+
+.about .navbar ul li a {
+    color: #061730;
+}
+.about-details p{
+    color: #07224a;
+}
+/* prodiuct  */
+.banner-content h2 {
+    color: #fff;
+}
+.product .navbar {
+    background: rgb(41, 98, 62);
+}
+.product .navbar ul li a {
+    color: #061730;
+}
+.product-details h4{
+    margin-left: 13px;
+    color: #5cb917;
+}
+.contact .contact-form{
+    background-color: #daf3d9;
+    padding: 5rem;
+    box-shadow: 0 0.2rem 1.2rem rgb(4, 4, 46);
+}
+.contact .contact-form .form-control::placeholder{
+    color: #061730;
+}
+.contact .contact-form .form-control{
+  padding: 1rem 1.5rem;
+  border-radius: 0rem;
+  border: 0.1rem solid rgb(156, 239, 31);
+  color: #07224a;
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+}
+.contact .contact-form textarea{
+    min-height: 20rem;
+}
+.contact .contact-form .info-box li{
+position: relative;
+padding-left: 7rem;
+padding-bottom: 3.25rem;
+margin-bottom: 2.9rem;
+}
+.contact .contact-form .info-box li  i {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 30px;
+}
+.contact .contact-form .info-box li  p {
+color: #061730;
+font-size: 22px;
+}
+.contact .contact-form .info-box li  a{
+color: #061730;
+font-size: 15px;
+}
+.contact .banner-content h2 {
+    color:#07224a;
+}
